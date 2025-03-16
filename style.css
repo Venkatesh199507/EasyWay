@@ -1,0 +1,346 @@
+body {
+    padding-top: 56px; /* Adjust this value based on the height of your navbar */
+    font-family: Arial, sans-serif;
+    background-color: #cee1f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbgcol {
+    background-color: #f5dada;
+    box-shadow: 0 2px 4px rgba(212, 7, 7, 0.1);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+/* Carousel Styles */
+.c-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.c-img {
+    height: 500px;
+    object-fit: fill;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: none;
+    padding: 20px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 20px;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Radio Button Styles */
+.radio-btn {
+    margin-top: 20px;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+.form-check-label {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .c-img {
+        height: 300px;
+    }
+
+    .modal-dialog {
+        margin: 10px;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        padding: 10px 20px;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-toggle::after {
+        display: none;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-menu {
+        position: static;
+        float: none;
+        margin-left: 20px;
+    }
+}
+
+/* Custom Logo Styles */
+.logo-flag {
+    background: linear-gradient(
+        to bottom,
+        #FF9933 60%, /* Orange (top 40%) */
+        #2a08ed 50%, /* White (middle 20%) */
+        #2a08ed 50%, /* White (middle 20%) */
+        #138808 20%  /* Green (bottom 40%) */
+    );
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text;
+    color: transparent; /* Make the text transparent to show the gradient */
+    font-weight: bold;
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+
+/* Search Results Grid */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* Second Navbar (Filters and Cart) */
+#second-navbar {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#second-navbar .filters {
+    display: flex;
+    gap: 10px;
+}
+
+#second-navbar .filters .form-select {
+    width: auto;
+}
+
+#second-navbar .cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#second-navbar .cart i {
+    font-size: 1.2rem;
+}
+
+#second-navbar .cart #cart-count {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f5dada;
+    box-shadow: 0 2px 4px rgba(212, 7, 7, 0.1);
+    border-top: 1px solid #e9ecef;
+    padding: 20px 0;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.footer ul {
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #007bff;
+}
+
+.footer .text-center {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Icons */
+.footer .fas {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+#cart-container {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
+
+/* Cart Dropdown Styles */
+#cart-dropdown-menu {
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+}
+
+#cart-dropdown-menu .dropdown-item {
+    white-space: normal; /* Allow text to wrap */
+}
+
+#cart-dropdown-menu .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+
+
+
